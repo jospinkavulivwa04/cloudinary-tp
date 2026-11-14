@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Permet d'avoir des images de même hauteur qui s'ajustent proprement */
 .product-img {
     height: 200px;
@@ -68,3 +69,75 @@ footer {
     letter-spacing: 0.5px;
 }
 
+=======
+/* Permet d'avoir des images de même hauteur qui s'ajustent proprement */
+.product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* --- Style Général & Typographie --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* --- En-tête avec un joli dégradé moderne --- */
+header {
+    background: linear-gradient(135deg, #1e1e2f 0%, #2b2b48 100%) !important;
+    border-bottom: 4px solid #4e54c8;
+}
+
+header h1 {
+    letter-spacing: 1px;
+}
+
+/* --- Cartes de produits avec effet design au survol --- */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* --- Ajustement des images Cloudinary --- */
+.product-img {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Petit effet de zoom stylé sur l'image quand on survole la carte */
+.card:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* --- Boutons personnalisés --- */
+.btn-outline-dark {
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+    background-color: #4e54c8;
+    border-color: #4e54c8;
+    color: #fff;
+}
+
+/* --- Pied de page --- */
+footer {
+    background-color: #1e1e2f !important;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+>>>>>>> 8a7da7cf681e025e91826cb2a9bbc4d8971e3c43

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -146,3 +147,150 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Catalogue Cloud - TP Cloudinary</title>
+    <!-- Intégration de Bootstrap pour le design responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- En-tête du site -->
+    <header class="bg-dark text-white text-center py-5 mb-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Khana Store</h1>
+            <p class="lead">Découvrez notre sélection de produits high-tech hébergés sur le Cloud (Cloudinary)</p>
+        </div>
+    </header>
+
+    
+    <main class="container mb-5">
+        <h2 class="text-center mb-4">Nos Produits</h2>
+        
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm"> 
+                    <img src="https://res.cloudinary.com/dfbp0za0/image/upload/v1794147968/caque-sans-fil-prelude-3.jpg" class="card-img-top product-img" alt="Casque Audio">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Casque Audio Sans Fil</h5>
+                        <p class="card-text">Un son immersif haute fidélité avec une autonomie longue durée pour vos journées de travail.</p>
+                        <div class="mt-auto">
+                            <span class="text-primary fw-bold fs-5">10.00 $</span>
+                            <!-- Bouton qui déclenche la modale avec des attributs data-* -->
+                            <button class="btn btn-outline-dark float-end" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#productModal" 
+                                    data-title="Casque Audio Sans Fil" 
+                                    data-price="10.00$" 
+                                    data-desc="Un son immersif haute fidélité avec une autonomie longue durée de 30 heures, réduction active du bruit et coussinets ultra-confortables."
+                                    data-img="https://res.cloudinary.com/dfbp0za0/image/upload/v1794147968/caque-sans-fil-prelude-3.jpg">
+                                Voir détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://res.cloudinary.com/dfbp0za0/image/upload/v1794149121/montr.jpg" class="card-img-top product-img" alt="Montre Connectée">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Montre Connectée Sport</h5>
+                        <p class="card-text">Suivez votre activité physique, votre rythme cardiaque et vos notifications directement depuis votre poignet.</p>
+                        <div class="mt-auto">
+                            <span class="text-primary fw-bold fs-5">20.99 $</span>
+                            <button class="btn btn-outline-dark float-end" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#productModal" 
+                                    data-title="Montre Connectée Sport" 
+                                    data-price="20.99 $" 
+                                    data-desc="Écran AMOLED lumineux, résistance à l'eau 5ATM, GPS intégré et suivi de plus de 50 modes sportifs différents."
+                                    data-img="https://res.cloudinary.com/dfbp0za0/image/upload/v1794149121/montr.jpg">
+                                Voir détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://res.cloudinary.com/dfbp0za0/image/upload/v1794149281/clavier.jpg" class="card-img-top product-img" alt="Clavier Mécanique">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Clavier Mécanique RGB</h5>
+                        <p class="card-text">Un confort de frappe exceptionnel avec rétroéclairage personnalisable, idéal pour les développeurs.</p>
+                        <div class="mt-auto">
+                            <span class="text-primary fw-bold fs-5">15.00 $</span>
+                            <button class="btn btn-outline-dark float-end" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#productModal" 
+                                    data-title="Clavier Mécanique RGB" 
+                                    data-price="15.00 $" 
+                                    data-desc="Switches mécaniques silencieux, châssis en aluminium robuste et effets lumineux RGB configurables par logiciel."
+                                    data-img="https://res.cloudinary.com/dfbp0za0/image/upload/v1794149281/clavier.jpg">
+                                Voir détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="productModalLabel">Titre du produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" class="img-fluid rounded mb-3" style="max-height: 250px; object-fit: cover;" alt="Image produit">
+                    <p id="modalDesc" class="text-muted text-start"></p>
+                    <h4 id="modalPrice" class="text-primary fw-bold text-start"></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 - Dev.Jospin Kavulivwa| Réalisé avec Cloudinary</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const productModal = document.getElementById('productModal');
+        productModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            
+            
+            const title = button.getAttribute('data-title');
+            const price = button.getAttribute('data-price');
+            const desc = button.getAttribute('data-desc');
+            const img = button.getAttribute('data-img');
+            
+            
+            productModal.querySelector('.modal-title').textContent = title;
+            productModal.querySelector('#modalDesc').textContent = desc;
+            productModal.querySelector('#modalPrice').textContent = price;
+            productModal.querySelector('#modalImage').src = img;
+        });
+    </script>
+</body>
+</html>
+
+>>>>>>> 8a7da7cf681e025e91826cb2a9bbc4d8971e3c43
